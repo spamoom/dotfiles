@@ -26,3 +26,6 @@ cp -Rv files/ ~
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/*
 chmod 644 ~/.ssh/*.pub
+
+echo "All Done\!"
+echo "Now follow the manual instructions at https://github.com/spamoom/dotfiles/blob/master/manual_steps.md"
