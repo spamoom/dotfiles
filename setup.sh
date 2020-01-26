@@ -2,7 +2,14 @@
 
 set -ex
 
+# Get sudo
+sudo -v
+
 xcode-select --install | true
+
+# Git config
+git config --global user.email "sam@netsells.co.uk"
+git config --global user.name "Sam Jordan"
 
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -26,6 +33,11 @@ cp -Rv files/ ~
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/*
 chmod 644 ~/.ssh/*.pub
+
+# Non-brewable
+sudo pip3 install awscli-local
+
+./macos.sh
 
 echo "All Done\!"
 echo "Now follow the manual instructions at https://github.com/spamoom/dotfiles/blob/master/manual_steps.md"
