@@ -11,6 +11,8 @@ xcode-select --install | true
 git config --global user.email "sam@netsells.co.uk"
 git config --global user.name "Sam Jordan"
 
+mkdir ~/bin
+
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -20,6 +22,10 @@ nvm install --lts
 
 # Install brew dump (lots of apps here)
 brew bundle
+
+# Select xcode
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+sudo xcodebuild -license
 
 # Oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -40,4 +46,4 @@ sudo pip3 install awscli-local
 ./macos.sh
 
 echo "All Done\!"
-echo "Now follow the manual instructions at https://github.com/spamoom/dotfiles/blob/master/manual_steps.md"
+echo "You should probably restart then follow the manual instructions at https://github.com/spamoom/dotfiles/blob/master/manual_steps.md"
