@@ -35,7 +35,7 @@ cask "transmit"
 cask "google-drive-file-stream"
 cask "google-chrome"
 cask "firefox"
-cask "zoom"
+cask "zoomus"
 # cask "querious" - trying tableplus
 cask "spotify"
 cask "backblaze"
