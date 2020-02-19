@@ -4,7 +4,6 @@ tap "homebrew/core"
 tap "homebrew/cask-fonts"
 
 brew "zsh"
-brew "dotfiles"
 brew "awscli"
 brew "awslogs"
 brew "mas"
