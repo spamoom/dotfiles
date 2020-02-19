@@ -14,6 +14,8 @@ brew "mysql@5.7"
 brew "php@7.4"
 brew "watch"
 brew "gnu-sed"
+brew "grep"
+brew "iproute2mac"
 
 cask "font-jetbrains-mono"
 
