@@ -18,6 +18,7 @@ brew "iproute2mac"
 
 cask "font-jetbrains-mono"
 
+cask "coconutbattery"
 cask "station"
 cask "insomnia"
 cask "dotnet-sdk"
